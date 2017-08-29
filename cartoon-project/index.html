@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick-Splat! Redesign</title>
+    <title>Nick Splat! Redesign</title>
     <link rel="stylesheet" type="text/css" href="css/foundation.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
@@ -16,68 +16,110 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
-    <div class="app-dashboard shrink-medium">
-  <div class="row expanded app-dashboard-top-nav-bar top-nav-style">
-    <div class="columns medium-2">
-      <button data-toggle="app-dashboard-sidebar" class="menu-icon hide-for-medium"></button>
-      <i class="app-dashboard-search-icon fa fa-ellipsis-h fa-2x"></i>
-    </div>
-    <div class="columns show-for-medium">
-      <div class="app-dashboard-search-bar-container">
-        <input class="app-dashboard-search" type="search" placeholder="Search">
-        <i class="app-dashboard-search-icon fa fa-search"></i>
-      </div>
-    </div>
-    <div class="columns shrink app-dashboard-top-bar-actions">
-      <button href="#" class="button hollow">Logout</button>
-      <a href="#" height="30" width="30" alt=""><i class="fa fa-info-circle"></i></a>
-    </div>
-  </div>
 
-  <div class="app-dashboard-body off-canvas-wrapper">
-    <div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
-      <div class="app-dashboard-sidebar-title-area">
-        <div class="app-dashboard-close-sidebar">
-          <h6 class="app-dashboard-sidebar-block-title sidebar-color">By Kids For Kids</h6>
-          <!-- Close button -->
-          <button id="close-sidebar" data-app-dashboard-toggle-shrink class="app-dashboard-sidebar-close-button show-for-medium" aria-label="Close menu" type="button">
-            <span aria-hidden="true"><a href="#"><i class="large fa fa-angle-double-left"></i></a></span>
-          </button>
-        </div>
-        <div class="app-dashboard-open-sidebar">
-          <button id="open-sidebar" data-app-dashboard-toggle-shrink class="app-dashboard-open-sidebar-button show-for-medium" aria-label="open menu" type="button">
-            <span aria-hidden="true"><a href="#"><i class="large fa fa-angle-double-right"></i></a></span>
-          </button>
-        </div>
-      </div>
-      <div class="app-dashboard-sidebar-inner">
-        <ul class="menu vertical">
-          <li><a href="#" class="sidebar-color is-active">
-            <i class="large fa fa-gamepad fa-2x"></i><span class="app-dashboard-sidebar-text">GAMES</span>
-          </a></li>
-          <li><a href="#" class=" sidebar-color ">
-            <i class="large fa fa-video-camera fa-2x"></i><span class="app-dashboard-sidebar-text">EPISODES</span>
-          </a></li>
-          <li><a href="#" class=" sidebar-color ">
-            <i class="large fa fa-headphones fa-2x"></i><span class="app-dashboard-sidebar-text">RADIO</span>
-          </a></li>
-          <li><a href="#" class=" sidebar-color">
-            <i class="large fa fa-star fa-2x"></i><span class="app-dashboard-sidebar-text">COOL STUFF</span>
-          </a></li>
-        </ul>
-      </div>
+
+    <div class="multilevel-offcanvas off-canvas position-right" id="offCanvasRight" data-off-canvas>
+
+      <ul class="vertical menu" data-accordion-menu>
+        <li><a href="#">SERVICES</a>
+          <ul class="menu vertical nested">
+            <li><a href="#">Brand</a></li>
+            <li><a href="#">Web Apps</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+           </ul>
+        </li>
+        <li><a href="#">PRODUCTS</a>
+          <ul class="menu vertical nested">
+            <li><a href="#">Product 1</a></li>
+            <li><a href="#">Product 2</a></li>
+            <li><a href="#">Product 3</a></li>
+           </ul>
+         </li>
+        <li><a href="#">CITIES</a>
+          <ul class="menu vertical nested">
+            <li><a href="#">London</a></li>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Paris</a></li>
+           </ul>
+        </li>
+       </ul>
+      <ul class="vertical menu">
+        <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      <ul class="vertical menu">
+         <li><a href="#">Journal</a></li>
+         <li><a href="#">FAQ</a></li>
+         <li><a href="#">Terms & Conditions</a></li>
+         <li><a href="#">Careers</a></li>
+         <li><a href="#">Students</a></li>
+       </ul>
+      <ul class="menu simple social-links">
+        <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+      </ul>
     </div>
 
-    <div class="app-dashboard-body-content intro-adv-banner off-canvas-content" data-off-canvas-content>
-      <div class="row">
-        <div class="small-12 medium-12 large-12 columns">
-          <img src="img/mi-pham-223464.jpg" class="banner-scales-styles" alt="">
-        </div> <!-- end of   -->
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="nav-bar">
+          <div class="nav-bar-left">
+            <a class="nav-bar-logo"><img class="logo" src="http://placehold.it/150x30"></a>
+          </div>
+          <div class="nav-bar-right">
+            <ul class="menu">
+              <li class="hide-for-small-only"><a href="#">TOUR</a></li>
+              <li class="hide-for-small-only"><a href="#">LOGIN</a></li>
+              <li>
+              <li>
+                <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
+                  <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
+                  <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                </button>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div class="body-info">
+        <h4> Multilevel Off-Canvas </h4>
+        <a class="button disabled" href="#">Watch Video (coming soon)</a>
+       </div>
      </div>
 
-    </div>
+
+
+
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+    <!-- Close button --
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+
+    <!-- Menu --
+    <ul class="vertical menu">
+      <li><a href="#">Foundation</a></li>
+      <li><a href="#">Dot</a></li>
+      <li><a href="#">ZURB</a></li>
+      <li><a href="#">Com</a></li>
+      <li><a href="#">Slash</a></li>
+      <li><a href="#">Sites</a></li>
+    </ul>
+
   </div>
-</div>
+
+  <div class="off-canvas-content" data-off-canvas-content>
+  <h1>Nick Splat</h1>
+  </div> -->
+
 
 
 
